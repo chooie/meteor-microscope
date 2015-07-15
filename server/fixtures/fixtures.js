@@ -1,3 +1,9 @@
+/**
+ * This code is in the server directory so it will never run on any user's
+ * browser. It runs immediately when the server starts and inserts data into
+ * the database.
+ */
+
 if (Posts.find().count() === 0) {
   Posts.insert({
     title: 'Introducing Telescope',
